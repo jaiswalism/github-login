@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    color: #E6EDF3;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 90vh;
+    background-color: #0D1116;
+}
+
+a{
+    color: #2F81F7;
+    font-size: 12px;
+}
+
+.main-container{
+    width: 308px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.head-img{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 26px;
+    fill: #E6EDF3;
+    height: 48px;
+}
+
+h1{
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -.5px;
+    font-weight: 100;
+}
+
+.form-box{
+    margin-top: 16px;
+    padding: 16px;
+    background-color: #161B22;
+    border: 1px solid #21262D;
+    border-radius: 6px;
+}
+
+input{
+    width: 100%;
+    padding: 5px 12px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    line-height: 20px;
+    background-color: #0d1117;
+    border: 2px solid #21262D;
+    border-radius: 6px;
+    transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+    transition-property: border;
+}
+
+input[type = 'text']:focus{
+    border: 2px solid #1F6FEB;
+    outline: 0;
+}
+
+.pass-box{
+    position: relative;
+}
+
+.pass-box a{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+input[type = 'submit']{
+    margin: 0;
+    background-color: #227e33;
+    outline-offset: -2px;
+    cursor: pointer;
+    transition: 80ms ;
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+    transition-property: background-color;
+}
+
+input[type = 'submit']:hover{
+    background-color: #2DA042;
+}
+
+.sign-opt-box{
+    border: 1.5px solid #292E35;
+    border-radius: 6px;
+    padding: 16px;
+    margin-top: 16px;
+    text-align: center;
+}
+.passkey{
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.sign-opt-box p a{
+    line-height: 21px;
+    font-size: 14px;
+}
+
+.bottom-links{
+    margin-top: 78px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.bottom-links a{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.bottom-links > a:last-of-type{
+    color: #7d8590;
+    margin-right: 0;
+}
+.bottom-links > a:first-of-type{
+    margin-left: 0;
+}
+
+.theme-btn{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.theme-btn a{
+    padding: 5px 15px;
+    border: 1px solid #1b1d20;
+    border-radius: 6px;
+}
+
+.light-btn{
+    background-color: #E6EDF3;
+    color: #1F2328;
+    border: 1px solid #D8DEE4;
+}
+
+.dark-btn{
+    background-color: #161B22;
+}
