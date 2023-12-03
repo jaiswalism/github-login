@@ -8,20 +8,6 @@
     <title>Sign in to GitHub · GitHub</title>
   </head>
   <body>
-    <script>
-    function changeCSS(cssFile, cssLinkIndex) {
-
-      var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
-  
-      var newlink = document.createElement("link");
-      newlink.setAttribute("rel", "stylesheet");
-      newlink.setAttribute("type", "text/css");
-      newlink.setAttribute("href", cssFile);
-  
-      document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
-  }
-</script>
-
     <div class="theme-btn">
       <a href="#" class="light-btn" onclick="changeCSS('light.css', 0);">Light</a> 
       <a href="#" class="dark-btn" onclick="changeCSS('dark.css', 0);">Dark</a>
@@ -54,5 +40,19 @@
         <a href="http://github.com/contact">Contact GitHub Support</a>
       </div>
     </div>
+    <script>
+	    function changeCSS(cssFile, cssLinkIndex) {
+	
+	    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+	
+	    var newlink = document.createElement("link");
+	    newlink.setAttribute("rel", "stylesheet");
+			newlink.setAttribute("type", "text/css");
+	    newlink.setAttribute("href", cssFile);
+	
+	    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+	    }
+    </script>
+    
   </body>
 </html>
